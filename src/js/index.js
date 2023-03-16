@@ -10,4 +10,11 @@ import Home from "./component/home.jsx";
 import SecondsCounter from "./component/SecondsCounter.jsx"
 
 //render your react application
-ReactDOM.render(<SecondsCounter seconds={15} />, document.querySelector("#app"));
+let seconds = 0;
+let tensOfSeconds = 0;
+let minutes = 0;
+let tensOfMinutes = 0;
+let hours = 0;
+let tensOfHours = 0;
+ReactDOM.render(<SecondsCounter secondsCount={seconds} tensOfSecondsCount={tensOfSeconds} minutesCount={minutes}
+tensOfMinutesCount={tensOfMinutes} hoursCount={hours} tensOfHours={tensOfHours}/>, document.querySelector("#app"));
